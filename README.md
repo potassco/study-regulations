@@ -43,7 +43,7 @@ Specific study regulations can be found in the [instances directory](./instances
 
 * [`cogsys.lp`](./instances/cogsys/cogsys.lp): basic study regulation for CogSys Master
 * [`cogsys-examination.lp`](./instances/cogsys/cogsys-examinations.lp): extension of Cogsys Master for examination tasks
-  * *Note: does not include the description of Ep, Es, ep(), es() and d*
+  * *Note: does not include the specification of Ep, Es, ep(·), es(·) and d (see the [tests](https://github.com/potassco/study-regulations/tree/master/tests))* 
 
 ## Usage
 
