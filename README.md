@@ -5,8 +5,8 @@
 ## Description 
 
 This repository contains ASP encodings to:
-* generate study plans given some study regulation, and
-* generate a User Interface (UI) for exploring study plans using [*clinguin*](https://clinguin.readthedocs.io/en/latest/).
+* generate study plans using *clingo*, and
+* generate a User Interface (UI) to explore study plans using [*clinguin*](https://clinguin.readthedocs.io/en/latest/).
 
 As an example, we focus on the study regulations for the [Cognitive Systems (CogSys) Master](https://www.uni-potsdam.de/fileadmin/projects/studium/docs/03_studium_konkret/07_rechtsgrundlagen/studienordnungen/StO_CogSys_EN.pdf).
 
@@ -31,15 +31,15 @@ For a formal description of the system, please read our [paper](https://www.cs.u
 ### Encodings
 
 
-* [`meta.lp`](./encodings/meta.lp): meta-encoding to generate study plans described in the paper
+* [`meta.lp`](./encodings/meta.lp): meta-encoding to generate study plans (described in the paper)
 * [`meta-examinations.lp`](./encodings/meta-examinations.lp): extended meta-encoding including examination tasks
-* [`show.lp`](./encodings/show.lp): *clingo* `#show` statements to simplify the visualization
+* [`show.lp`](./encodings/show.lp): `#show` statements to simplify the visualization
 
 
 
 ### Instances
 
-Specific study regulations are described in the [instances directory](./instances).
+Specific study regulations are described in the [instances directory](./instances):
 
 * [`cogsys.lp`](./instances/cogsys/cogsys.lp): basic study regulation for CogSys Master
 * [`cogsys-examination.lp`](./instances/cogsys/cogsys-examinations.lp): extension of Cogsys Master for examination tasks
