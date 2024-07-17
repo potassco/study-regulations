@@ -5,7 +5,7 @@
 ## Description 
 
 This repository contains ASP encodings to:
-* generate study plans using *clingo*, and
+* generate study plans using [*clingo*](https://potassco.org/clingo/), and
 * generate a User Interface (UI) to explore study plans using [*clinguin*](https://clinguin.readthedocs.io/en/latest/).
 
 As an example, we focus on the study regulations for the [Cognitive Systems (CogSys) Master](https://www.uni-potsdam.de/fileadmin/projects/studium/docs/03_studium_konkret/07_rechtsgrundlagen/studienordnungen/StO_CogSys_EN.pdf).
