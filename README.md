@@ -39,7 +39,7 @@ For a formal description of the system, please read our [paper](https://www.cs.u
 
 ### Instances
 
-Specific study regulations are described in the [instances directory](./instances):
+Specific study regulations can be found in the [instances directory](./instances):
 
 * [`cogsys.lp`](./instances/cogsys/cogsys.lp): basic study regulation for CogSys Master
 * [`cogsys-examination.lp`](./instances/cogsys/cogsys-examinations.lp): extension of Cogsys Master for examination tasks
