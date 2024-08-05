@@ -2,7 +2,7 @@
 # Study regulations
 > An ASP-based system for reasoning about study regulations
 
-## Description 
+## Description
 
 This repository contains ASP encodings to:
 * generate study plans using [*clingo*](https://potassco.org/clingo/), and
@@ -31,8 +31,8 @@ For a formal description of the system, please read our [paper](https://www.cs.u
 ### Encodings
 
 
-* [`meta.lp`](./encodings/meta.lp): meta-encoding to generate study plans (described in the paper)
-* [`meta-examinations.lp`](./encodings/meta-examinations.lp): extended meta-encoding including examination tasks
+* [`encoding.lp`](./encodings/encoding.lp): encoding-encoding to generate study plans (described in the paper)
+* [`encoding-examinations.lp`](./encodings/encoding-examinations.lp): extended encoding-encoding including examination tasks
 * [`show.lp`](./encodings/show.lp): `#show` statements to simplify the visualization
 
 
@@ -43,7 +43,7 @@ Specific study regulations can be found in the [instances directory](./instances
 
 * [`cogsys.lp`](./instances/cogsys/cogsys.lp): basic study regulation for CogSys Master
 * [`cogsys-examination.lp`](./instances/cogsys/cogsys-examinations.lp): extension of Cogsys Master for examination tasks
-  * *Note: does not include the specification of Ep, Es, ep(·), es(·) and d (see the [tests](https://github.com/potassco/study-regulations/tree/master/tests))* 
+  * *Note: does not include the specification of Ep, Es, ep(·), es(·) and d (see the [tests](https://github.com/potassco/study-regulations/tree/master/tests))*
 
 ## Usage
 
@@ -52,7 +52,7 @@ Specific study regulations can be found in the [instances directory](./instances
 - Obtain a single study plan
 
 ```command
-clingo instances/cogsys/cogsys.lp encodings/{meta.lp,show.lp} -c n=4 1
+clingo instances/cogsys/cogsys.lp encodings/{encoding.lp,show.lp} -c n=4 1
 ```
 
 
@@ -61,7 +61,7 @@ clingo instances/cogsys/cogsys.lp encodings/{meta.lp,show.lp} -c n=4 1
 - Open an interactive UI to configure your study plan
 
 ```command
-clinguin client-server --domain-files instances/cogsys/cogsys.lp encodings/meta.lp --ui-files encodings/ui.lp -c n=4
+clinguin client-server --domain-files instances/cogsys/cogsys.lp encodings/encoding.lp --ui-files encodings/ui.lp -c n=4
 ```
 
 ![](img/out.png)
