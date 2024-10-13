@@ -4,16 +4,16 @@ in((fm1;fm2;fm3),f).             map(c,(fm1;fm2;fm3),6).
 in((am11;am12;am21),a).          map(c,(am11;am12;am21),6).
 in((am22;am31;am32),a).          map(c,(am22;am31;am32),6).
 in(E,o) :- in(E,(f;a)).          map(c,(pm1;pm2;pm3),12).
-in((pm1;pm2;pm3),p).             map(c,im1,15).
+in((pm1;pm2;pm3),p).             map(c,im,15).
                                  map(c,msc,30).
 
 % m                              % s
 in(E,m) :- in(E,(b;f;a;p)).      map(s,bm1,w;s,bm2,s;s,bm3,w).
-in((im1;msc),m).                 map(s,(fm1;fm2;fm3),w).
+in((im;msc),m).                  map(s,(fm1;fm2;fm3),w).
                                  map(s,(am11;am12;am21),e).
                                  map(s,(am22;am31;am32),e).
                                  map(s,(pm1;pm2;pm3),e).
-                                 map(s,(im1;msc),e).
+                                 map(s,(im;msc),e).
 
 % e                              % l and u
 in(fm1,e).                       map(l,b,27;l,o,24;l,p,24;l,m,120).
@@ -22,7 +22,7 @@ in(fm1,e).                       map(l,b,27;l,o,24;l,p,24;l,m,120).
 % global constraints
 card(e,leq,2).  equal(int(s,f),e).
 sum(int(H,s),c,bw,(L,U)) :- H = (b;o;p;m), map(l,H,L), map(u,H,U).
-in(im1,gc3). in(msc,gc3). subseteq(gc3,s).
+in(im,gc3). in(msc,gc3). subseteq(gc3,s).
 
 % temporal constraints
 empty(int(s(I),s(J)))       :- I = 1..n, J = 1..n, I < J.
