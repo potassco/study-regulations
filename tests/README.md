@@ -35,7 +35,7 @@
   - returns 36 answer sets
   - returns 22 answer sets if we use option --project
 
-* `test-cogsys-exams`:
-  - `clingo instances/cogsys/{cogsys.lp,cogsys-examinations.lp} encodings/encoding-examinations.lp tests/test-cogsys-exams.lp -c n=3 0 -q`
+* `test-cogsys-examinations`:
+  - `clingo instances/cogsys/{cogsys.lp,cogsys-examinations.lp} encodings/encoding-examinations.lp tests/test-cogsys-examinations.lp -c n=3 0 -q`
   - returns 3,840 answer sets
   - returns 353,760 answer sets if n=4
