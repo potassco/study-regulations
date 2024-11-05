@@ -14,11 +14,11 @@ in(E,m) :- in(E,(b;f;a;p)).      map(s,bm1,w;s,bm2,s;s,bm3,w).
 in((im;msc),m).                  map(s,(fm1;fm2;fm3),w).
                                  map(s,(am11;am12;am21),e).
                                  map(s,(am22;am31;am32),e).
-% e                              map(s,(pm1;pm2;pm3),e).
-in(fm1,e).                       map(s,(im1;msc1),e).
+                                 map(s,(pm1;pm2;pm3),e).
+                                 map(s,(im;msc),e).
 
-                                 % l and u
-                                 map(l,b,27;l,o,24;l,p,24;l,m,120).
+% e                              % l and u
+in(fm1,e).                       map(l,b,27;l,o,24;l,p,24;l,m,120).
                                  map(u,b,27;u,o,24;u,p,24;u,m,120).
 
 % global constraints
