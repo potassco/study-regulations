@@ -1,11 +1,11 @@
 % generate
-{ in(E,s(I)) } :- in(E,m), I=1..n.
+{ in(M,s(I)) } :- in(M,m), I=1..n.
 
 % s = s(1) U ... U s(n)
-in(E,s) :- in(E,s(I)).
+in(M,s) :- in(M,s(I)).
 
 % m(w) and m(s)
-in(E,m(X)) :- X = (s;w), in(E,m), map(s,E,X).
+in(M,m(X)) :- X = (s;w), in(M,m), map(s,M,X).
 
 % additional sets
 set(A) :-      empty(A).
@@ -16,19 +16,19 @@ set(A) :-   card(A,R,L).    set(A) :- sum(A,M,R,L).
 set(A) :- set( int(A,B)).   set(B) :- set(int(A,B)).
 set(A) :- set(before(A)).
 %
-in( E, int(A,B)) :- set( int(A,B)), in(E,A), in(E,B).
-in(E1,before(A)) :- set(before(A)), in(E1,s(I)), in(E2,A), in(E2,s(J)), I < J.
+in( M, int(A,B)) :- set( int(A,B)), in(M,A), in(M,B).
+in(M1,before(A)) :- set(before(A)), in(M1,s(I)), in(M2,A), in(M2,s(J)), I < J.
 
 % constraints
-:- empty(A), in(E,A).
+:- empty(A), in(M,A).
 %
-:- subseteq(A,B), in(E,A), not in(E,B).
+:- subseteq(A,B), in(M,A), not in(M,B).
 %
-:- equal(A,B), in(E,A), not in(E,B).
-:- equal(A,B), not in(E,A), in(E,B).
+:- equal(A,B), in(M,A), not in(M,B).
+:- equal(A,B), not in(M,A), in(M,B).
 %
-:- card(A,leq,U), not { in(E,A) } U.
+:- card(A,leq,U), not { in(M,A) } U.
 %
-:- sum(A,F,bw,(L,U)), not L #sum{ V,E : in(E,A), map(F,E,V) } U.
-:- sum(A,F,geq,   L), not L #sum{ V,E : in(E,A), map(F,E,V) }.
+:- sum(A,F,bw,(L,U)), not L #sum{ V,M : in(M,A), map(F,M,V) } U.
+:- sum(A,F,geq,   L), not L #sum{ V,M : in(M,A), map(F,M,V) }.
 
