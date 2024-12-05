@@ -31,9 +31,9 @@ For a formal description of the system, please read our [paper](https://www.cs.u
 ### Encodings
 
 
-* [`encoding.lp`](./encodings/encoding.lp): encoding-encoding to generate study plans (described in the paper)
-* [`encoding-examinations.lp`](./encodings/encoding-examinations.lp): extended encoding-encoding including examination tasks
-* [`show.lp`](./encodings/show.lp): `#show` statements to simplify the visualization
+* [`encoding.lp`](./encodings/encoding.lp): encoding - encoding to generate study plans (described in the paper).
+* [`encoding-examinations.lp`](./encodings/encoding-examinations.lp): extended encoding - encoding including examination tasks.
+* [`show.lp`](./encodings/show.lp): `#show` statements to simplify the visualization.
 
 
 
@@ -41,9 +41,9 @@ For a formal description of the system, please read our [paper](https://www.cs.u
 
 Specific study regulations can be found in the [instances directory](./instances):
 
-* [`cogsys.lp`](./instances/cogsys/cogsys.lp): basic study regulation for CogSys Master
-* [`cogsys-examination.lp`](./instances/cogsys/cogsys-examinations.lp): extension of Cogsys Master for examination tasks
-  * *Note: does not include the specification of Ep, Es, ep(·), es(·) and d (see the [tests](https://github.com/potassco/study-regulations/tree/master/tests))*
+* [`cogsys.lp`](./instances/cogsys/cogsys.lp): basic study regulations for CogSys Master.
+* [`cogsys-examinations.lp`](./instances/cogsys/cogsys-examinations.lp): extension of CogSys Master with examination tasks.
+* [`cogsys-examinations-constraint.lp`](./instances/cogsys/cogsys-examinations-constraint.lp): CogSys Master examination tasks constraints (described in the paper).
 
 ## Usage
 
