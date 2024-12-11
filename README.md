@@ -43,7 +43,7 @@ Specific study regulations can be found in the [instances directory](./instances
 
 * [`cogsys.lp`](./instances/cogsys/cogsys.lp): basic study regulations for CogSys Master.
 * [`cogsys-examinations.lp`](./instances/cogsys/cogsys-examinations.lp): extension of CogSys Master with examination tasks.
-* [`cogsys-examinations-constraint.lp`](./instances/cogsys/cogsys-examinations-constraint.lp): CogSys Master examination tasks constraints (described in the paper).
+* [`cogsys-examinations-constraints.lp`](./instances/cogsys/cogsys-examinations-constraints.lp): CogSys Master examination tasks constraints (described in the paper).
 
 ## Usage
 
